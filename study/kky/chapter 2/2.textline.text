@@ -1,0 +1,355 @@
+>>> "Life is too short, You need Python"
+'Life is too short, You need Python'
+>>> "a"
+'a'
+>>> 'Python is fun'
+'Python is fun'
+>>> """Life is too short, You nee python"""
+'Life is too short, You nee python'
+>>> food
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'food' is not defined
+>>> food = "Python's favorite food is perl"
+>>> food
+"Python's favorite food is perl"
+>>> say = '"Python is very easy." he says'
+>>> say
+'"Python is very easy." he says'
+>>> food = 'Python/'s favorite food is perl'
+  File "<stdin>", line 1
+    food = 'Python/'s favorite food is perl'
+                    ^
+SyntaxError: invalid syntax
+>>> food = 'Python\'s faovrite food is perl'
+>>> food
+"Python's faovrite food is perl"
+>>> "\"Python is very easy.\" he says."
+'"Python is very easy." he says.'
+>>> say = "\"Python is very easy/\" he says."
+>>> say
+'"Python is very easy/" he says.'
+>>> multiline = "LIfe is too short\nYou need python"
+>>> multiline
+'LIfe is too short\nYou need python'
+>>> multiline='''
+... Life is too short
+... You need python
+... '''
+>>> multiline
+'\nLife is too short\nYou need python\n'
+>>> print(multiline)
+
+Life is too short
+You need python
+
+>>> multiline =  Life \nis \ttoo \\short \'You \"need Python
+  File "<stdin>", line 1
+    multiline =  Life \nis \ttoo \\short \'You \"need Python
+                                                           ^
+SyntaxError: unexpected character after line continuation character
+>>> multiline = Life \nis \ttoo \\short \'You \"need Python
+  File "<stdin>", line 1
+    multiline = Life \nis \ttoo \\short \'You \"need Python
+                                                          ^
+SyntaxError: unexpected character after line continuation character
+>>> multiline = Life \n is \t too \\ short \' You \" need Python
+  File "<stdin>", line 1
+    multiline = Life \n is \t too \\ short \' You \" need Python
+                                                               ^
+SyntaxError: unexpected character after line continuation character
+>>> multiline = "Life \n is \t too \\ short \' You \" need Python"
+>>> print(multiline)
+Life
+ is      too \ short ' You " need Python
+>>> head = "Python"
+>>> tail = " is fun!"
+>>> head + tail
+'Python is fun!'
+>>> a = "python"
+>>> a * 2
+'pythonpython'
+>>> d = dull boy
+  File "<stdin>", line 1
+    d = dull boy
+             ^
+SyntaxError: invalid syntax
+>>> d = "dull boy"
+>>> b = "Playing without work"
+>>> c = "makes"
+>>> b * c * d
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> b + c +d
+'Playing without workmakesdull boy'
+>>> c = " makes "
+>>> b + c +d
+'Playing without work makes dull boy'
+>>> d = "a dull boy"
+>>> b + c +d
+'Playing without work makes a dull boy'
+>>> b = "Playing without works"
+>>> b + c +d
+'Playing without works makes a dull boy'
+>>> c = "make"
+>>> b + c +d
+'Playing without worksmakea dull boy'
+>>> c = " make "
+>>> b + c +d
+'Playing without works make a dull boy'
+>>> a = "Life is too short, You need Python"
+>>> a[3]
+'e'
+>>> a = "1"
+>>> b = "2"
+>>> c = "3"
+>>> a + b + c
+'123'
+>>> b = " 2 "
+>>> c = " 3 "
+>>> a + b + c
+'1 2  3 '
+>>> a = " 1"
+>>> a + b + c
+' 1 2  3 '
+>>> a = "1 "
+>>> c = " 3"
+>>> a + b + c
+'1  2  3'
+>>> tokenNo = "1 2 3"
+>>> print(tokenNo)
+1 2 3
+>>> site = 'web is free'
+>>> site.split(' ')
+['web', 'is', 'free']
+>>> numbers = "1 2 3"
+>>> numbers.split(" ")
+['1', '2', '3']
+>>> str(numbers)
+'1 2 3'
+>>> int(numbers)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '1 2 3'
+>>> numbers = "1 2 3"
+>>> print(sent_tokenize(numbers))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sent_tokenize' is not defined
+>>> from nltk.tokenize import sent_tokenize
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'nltk'
+>>>     print(sent_tokenize(numbers))
+  File "<stdin>", line 1
+    print(sent_tokenize(numbers))
+    ^
+IndentationError: unexpected indent
+>>> print(numbers)
+1 2 3
+>>> print(word_tokenize('numbers'))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'word_tokenize' is not defined
+>>> a = "Life is too short, You need Python"
+>>> b = a[0] + a[1] + a[2] + a[3]
+>>> b
+'Life'
+>>> len(a)
+34
+>>> a[-6]
+'P'
+>>> a[0]
+'L'
+>>> a[-0]
+'L'
+>>> a[0:4]
+'Life'
+>>> a[6:7]
+'s'
+>>> a[5:7]
+'is'
+>>> a[19:]
+'You need Python'
+>>> a[:17]
+'Life is too short'
+>>> a
+'Life is too short, You need Python'
+>>> a[:]
+'Life is too short, You need Python'
+>>> a[14:-7]
+'ort, You need'
+>>> a[14:-16]
+'ort,'
+>>> a = "20010331Rainy"
+>>> date = a[:8]
+>>> weather = a[8:]
+>>> date
+'20010331'
+>>> weather
+'Rainy'
+>>> year = a[:4]
+>>> day = a[4:8]
+>>> weather = a[8:]
+>>> year
+'2001'
+>>> day
+'0331'
+>>> weather
+'Rainy'
+>>> a = "Pithon"
+>>> a[1]
+'i'
+>>> a[1] = 'y'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> a[1] = 'y'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> a[:1]
+'P'
+>>> a[:2]
+'Pi'
+>>> a[2:]
+'thon'
+>>> a[:1] + 'y' + a[2:]
+'Python'
+>>> a[:1] + 'y'
+'Py'
+>>> a[:1] + 'y' + a[1:]
+'Pyithon'
+>>> a[:1] + 'y' + a[3:]
+'Pyhon'
+>>> "I eat %d apples." % 3
+'I eat 3 apples.'
+>>> "I eat %s apples." % "five"
+'I eat five apples.'
+>>> number = 3
+>>> "I eat %d apples." % number
+'I eat 3 apples.'
+>>> number = 10
+>>> day = three"
+  File "<stdin>", line 1
+    day = three"
+               ^
+SyntaxError: EOL while scanning string literal
+>>> day = "three"
+>>> "I eat %d apples. so I was sick for %s days." % (number, day)
+'I eat 10 apples. so I was sick for three days.'
+>>> numbers = "1 2 3"
+>>> numbers
+'1 2 3'
+>>> "I have %s apples" % 3
+'I have 3 apples'
+>>> "%s %s %s" % (1, 2, 3)
+'1 2 3'
+>>> "rate is %s" % 3.234
+'rate is 3.234'
+>>> "Error is %d%." % 98
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: incomplete format
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1
+    Traceback (most recent call last):
+                    ^
+SyntaxError: invalid syntax
+>>> "Error is %d%%." % 98
+'Error is 98%.'
+>>> "%10s" % "hi"
+'        hi'
+>>> "%-10sjane." % 'hi'
+'hi        jane.'
+>>> "%0.4f" % 3.42134234
+'3.4213'
+>>> "%10.4f" % 3.42134234
+'    3.4213'
+>>> "I eat {0} apples.".format(3)
+'I eat 3 apples.'
+>>> "I eat {0} apples".format("five")
+'I eat five apples'
+>>> number = 3
+>>> "I eat {0} apples".format(number)
+'I eat 3 apples'
+>>> number = 10
+>>> day = "three"
+>>> "I ate {0} apples. so I was sick for {1} days.".format(number, day)
+'I ate 10 apples. so I was sick for three days.'
+>>> "I ate {0} apples. so I was sick for {2} days.".format(number, day)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: Replacement index 2 out of range for positional args tuple
+>>> "I ate {0} apples. so I was sick for {1} days.".format(number, day)
+'I ate 10 apples. so I was sick for three days.'
+>>> "I ate {0} apples. so I was sick for {1} days.".format(number, day)
+'I ate 10 apples. so I was sick for three days.'
+>>> "I ate {number} apples. so I was sick for {day} days.".format(number=10, day=3)
+'I ate 10 apples. so I was sick for 3 days.'
+>>> "I ate {number} apples. so I was sick for {day} days.".format(number=10, day=3)
+'I ate 10 apples. so I was sick for 3 days.'
+>>> "I ate {0} apples. so I was sick for {day} days.".format(10, day=3)
+'I ate 10 apples. so I was sick for 3 days.'
+>>> "{0:<10}".format("hi")
+'hi        '
+>>> "{0:>10}".format("hi")
+'        hi'
+>>> "{0:^10}".format("hi")
+'    hi    '
+>>> "{0:=^10}".format("hi")
+'====hi===='
+>>> "{0:!<10}".format("hi")
+'hi!!!!!!!!'
+>>> "{0:★^10}".format("stars..")
+'★stars..★★'
+>>> "{0:★^22}".format("stars..")
+'★★★★★★★stars..★★★★★★★★'
+>>> y = 3.42134234
+>>> {0:0.4f}".format(y)
+  File "<stdin>", line 1
+    {0:0.4f}".format(y)
+          ^
+SyntaxError: invalid syntax
+>>> "{0:0.4f}".format(y)
+'3.4213'
+>>> "{0:10.4f}".format(y)
+'    3.4213'
+>>> "{0:$^10.4f}".format(y)
+'$$3.4213$$'
+>>> "{{ and }}".format()
+'{ and }'
+>>> name = '홍길동'
+>>> age = 30
+>>> f'나의 이름은 {name}입니다. 나이는 {age}입니다.'
+'나의 이름은 홍길동입니다. 나이는 30입니다.'
+>>> age = 30
+>>> f'나는 내년이면 {age+1}살이 된다.'
+'나는 내년이면 31살이 된다.'
+>>> d = {'name':'홍길동','age':30}
+>>> f'나의 이름은 {d[""name"]}입니다. 나이는 {d["age"]}'입니다.
+  File "<stdin>", line 1
+    f'나의 이름은 {d[""name"]}입니다. 나이는 {d["age"]}'입니다.
+                                             ^
+SyntaxError: invalid syntax
+>>> f'나의 이름은 {d[""name"]}입니다. 나이는 {d["age"]}입니다..'
+  File "<stdin>", line 1
+SyntaxError: f-string: unterminated string
+>>> f'나의 이름은 {d["name"]}입니다. 나이는 {d["age"]}입니다.'
+'나의 이름은 홍길동입니다. 나이는 30입니다.'
+>>> f'{"hi":<10}'
+'hi        '
+>>> f'{"hi":>10}'
+'        hi'
+>>> f'{"hi":^10}'
+'    hi    '
+>>> f'{"hi":=^10}'
+'====hi===='
+>>> f'{"look ma":ㅇㅅㅇ<27}'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: Invalid format specifier
+>>> f'{"look ma":!<27}'
+'look ma!!!!!!!!!!!!!!!!!!!!'
+>>>
