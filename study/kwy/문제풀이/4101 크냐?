@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 21 19:10:41 2019
+
+@author: wykim
+"""
+
+
+    
+while 1:
+    num1,num2 = (input()).split()
+   
+    num1 = int(num1)
+    num2 = int(num2)
+
+    if (num1 == 0) and (num2 == 0) : break
+    
+    if num1 >num2:
+        print("Yes")
+    else :
+        print("No")
