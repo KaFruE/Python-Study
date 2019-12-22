@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 21 19:10:41 2019
+
+@author: wykim
+"""
+
+N = int(input())
+
+if N == 0:
+    print("YONSEI")
+else:
+    print("Leading the Way to the Future")
