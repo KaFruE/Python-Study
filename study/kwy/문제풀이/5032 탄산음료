@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jan 11 13:59:42 2020
+
+@author: wykim
+"""
+
+e,f,c= map(int,input().split())
+
+empty = e+f
+temp = empty
+sum = 0
+
+while temp >= c:
+    sum = sum + temp//c
+    temp = temp//c + temp%c
+
+print(sum)
